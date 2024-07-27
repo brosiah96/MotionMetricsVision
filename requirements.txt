@@ -1,4 +1,10 @@
-opencv-python
-opencv-contrib-python
-numpy
-matplotlib
+# Core libraries for computer vision and numerical computations
+opencv-python==4.5.5.64
+numpy==1.21.2
+matplotlib==3.4.3
+
+# For unit testing and mocking
+unittest2==1.1.0
+
+# Typing extensions
+typing-extensions==3.10.0.2
