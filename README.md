@@ -1,3 +1,6 @@
+Great! Below is the updated `README.md` file, including the correct repository link:
+
+```markdown
 # MotionMetricsVision
 
 MotionMetricsVision is an advanced object tracking and motion analysis system built using OpenCV and Matplotlib. It tracks multiple objects in real-time, calculates their motion parameters such as speed and acceleration, and visualizes the results dynamically. This project is ideal for applications in surveillance, sports analytics, and automated monitoring systems.
@@ -63,7 +66,6 @@ MotionMetricsVision/
 │   ├── test_object_tracker.py
 │   └── test_video_capture.py
 └── README.md
-├──LICENSE.md
 ```
 
 - **config.py**: Contains configuration parameters for tracking and analysis.
@@ -72,6 +74,15 @@ MotionMetricsVision/
 - **video_capture.py**: Handles video capture and processing.
 - **test/**: Contains unit tests for the various components.
 
+## Contributing
+
+Contributions are welcome! Please fork the repository and use a feature branch. Pull requests are warmly welcome.
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a pull request
 
 ## License
 
@@ -81,7 +92,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 - The OpenCV team for their powerful computer vision library.
 - The Matplotlib community for their versatile plotting library.
-
 ```
 
-This README file provides a clear and comprehensive overview of the MotionMetricsVision project, including installation instructions, usage guidelines, project structure, and contribution information.
+This `README.md` provides a clear and comprehensive overview of the MotionMetricsVision project, including installation instructions, usage guidelines, project structure, and contribution information.
