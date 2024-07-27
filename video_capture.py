@@ -1,21 +1,17 @@
 # video_capture.py
-import cv2
-import numpy as np
-import matplotlib.pyplot as plt
+import logging
 import queue
 import threading
-from collections import deque
+import cv2
+import matplotlib.pyplot as plt
+import numpy as np
 from matplotlib.animation import FuncAnimation
 from typing import List, Dict, Any
 
 # Importing constants from config
 import config
-
 # Import the ObjectTracker class
 from object_tracker import ObjectTracker
-
-# Setup logging
-import logging
 
 logging.basicConfig(level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
 
