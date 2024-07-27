@@ -123,12 +123,19 @@ class ObjectTracker:
             object_id (int): The ID of the object to remove the tracker for.
         """
         logging.info(f"Removing tracker for object {object_id} due to multiple failures.")
-        del self.object_positions[object_id]
-        del self.object_tracks[object_id]
-        del self.object_speeds[object_id]
-        del self.object_accelerations[object_id]
-        del self.failures[object_id]
-        del self.trackers[object_id]
+
+        if object_id in self.object_positions:
+            del self.object_positions[object_id]
+        if object_id in self.object_tracks:
+            del self.object_tracks[object_id]
+        if object_id in self.object_speeds:
+            del self.object_speeds[object_id]
+        if object_id in self.object_accelerations:
+            del self.object_accelerations[object_id]
+        if object_id in self.failures:
+            del self.failures[object_id]
+        if object_id in self.trackers:
+            del self.trackers[object_id]
 
     def smooth_positions(self, positions: Deque[Tuple[float, float, float]], window_size: int = 5) -> Deque[np.ndarray]:
         """
