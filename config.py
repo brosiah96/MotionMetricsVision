@@ -9,9 +9,9 @@ MAX_FRAMES_TO_TRACK = 30
 MIN_AREA = 500
 MAX_FAILURES = 10
 
-# HSV color range for detecting white objects
-LOWER_WHITE = [0, 0, 150]
-UPPER_WHITE = [180, 50, 255]
+# HSV color range for detecting objects of a particular color.
+LOWER_COLOR = [0, 0, 150]  # LOWER_WHITE
+UPPER_COLOR = [180, 50, 255]  # UPPER_WHITE
 
 # Morphological operations kernel size
 KERNEL_SIZE = (5, 5)
