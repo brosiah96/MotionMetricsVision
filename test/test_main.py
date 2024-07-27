@@ -1,8 +1,9 @@
 # test_main.py
-import unittest
-from unittest.mock import patch, MagicMock
-import main
 import logging
+import unittest
+from unittest.mock import patch
+
+import main
 
 # Set up logging for tests
 logging.basicConfig(level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
