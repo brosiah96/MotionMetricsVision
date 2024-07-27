@@ -1,91 +1,102 @@
-MotionMetricsVision
+# MotionMetricsVision
 
-MotionMetricsVision is an advanced object tracking and motion analysis system built using OpenCV and Matplotlib. It tracks multiple objects in real-time, calculates their motion parameters such as speed and acceleration, and visualizes the results dynamically. This project is ideal for applications in surveillance, sports analytics, and automated monitoring systems.
+MotionMetricsVision is an advanced object tracking and motion analysis system developed using OpenCV and Matplotlib. It is designed to track multiple objects in real time, calculate their motion parameters, and visualize the results dynamically. This system can be utilized in various fields such as surveillance, sports analytics, and automated monitoring systems.
 
-Features
+## Features
 
-- Multi-Object Tracking: Efficiently tracks multiple objects simultaneously using various OpenCV trackers.
-- Motion Analysis: Calculates detailed motion parameters including speed and acceleration.
-- Real-Time Visualization: Provides dynamic visual feedback of tracked objects and their trajectories.
-- Configurable Parameters: Easily adjustable settings for different tracking and analysis needs.
-- Extensive Logging: Detailed logging for easy debugging and performance monitoring.
+- **Multi-Object Tracking:** Simultaneously tracks multiple objects with unique identifiers.
+- **Motion Analysis:** Calculates motion parameters including speed, acceleration, and trajectory.
+- **Real-Time Visualization:** Provides dynamic visualization of tracked objects and their motion paths.
+- **Configurable Parameters:** Allows customization of tracking and analysis settings.
+- **Extensive Logging:** Maintains detailed logs of tracking data for further analysis.
 
-Installation
+# Installation
 
-Prerequisites
+### Prerequisites
 
-Ensure you have Python 3.7 or higher installed. You will also need the following Python packages:
+- Python 3.7+
+- pip (Python package installer)
 
-- `opencv-python`
-- `opencv-contrib-python`
-- `numpy`
-- `matplotlib`
+### Dependencies
 
-You can install these dependencies using pip:
+Install the required dependencies using the following command:
 
+```bash
+pip install -r requirements.txt
+```
 
-pip install opencv-python opencv-contrib-python numpy matplotlib
+### Requirements
 
+Create a `requirements.txt` file with the following content:
 
-Clone the Repository
+```
+# Core libraries for computer vision and numerical computations
+opencv-python==4.5.5.64
+numpy==1.21.2
+matplotlib==3.4.3
 
+# For unit testing and mocking
+unittest2==1.1.0
 
+# Typing extensions (if needed for type hints)
+typing-extensions==3.10.0.2
+```
+
+### Clone the Repository
+
+Clone the repository to your local machine:
+
+```bash
 git clone https://github.com/brosiah96/MotionMetricsVision.git
 cd MotionMetricsVision
+```
 
+## Usage
 
-Usage
+### Running the Application
 
-Running the Application
+Run the main script to start the object tracking system:
 
-To run the application, simply execute the `main.py` script:
-
-
+```bash
 python main.py
+```
 
-This will start the video capture, object tracking, and real-time visualization.
+### Configuration
 
-Configuration
+The configuration file `config.yaml` allows you to customize the parameters for object tracking and motion analysis. Edit this file to adjust settings such as detection thresholds, tracking algorithms, and visualization preferences.
 
-You can adjust the tracking and analysis parameters in the `config.py` file.
+### Visualization
 
-Project Structure
+The application provides real-time visualization of tracked objects and their motion paths. The results are displayed in a window.
 
+## File Structure
 
+Here's an overview of the project's file structure:
+
+```
 MotionMetricsVision/
-├── config.py
-├── main.py
-├── object_tracker.py
-├── video_capture.py
-├── test/
-│   ├── test_main.py
-│   ├── test_object_tracker.py
-│   └── test_video_capture.py
-└── README.md
+│
+├── main.py               # Main script to run the object tracking system
+├── object_tracker.py     # Object tracking and motion analysis logic
+├── config.yaml           # Configuration file for parameters
+├── requirements.txt      # Required dependencies
+├── README.md             # Project documentation
+└── logs/                 # Directory for log files
+    └── tracking.log      # Log file for tracking data
+```
 
+## Contributing
 
-- config.py: Contains configuration parameters for tracking and analysis.
-- main.py: The main entry point of the application.
-- object_tracker.py**: Implements the object tracking and motion analysis logic.
-- video_capture.py**: Handles video capture and processing.
-- test/: Contains unit tests for the various components.
+We welcome contributions to enhance MotionMetricsVision. Please follow these steps to contribute:
 
-Contributing
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature-branch`).
+3. Make your changes and commit them (`git commit -am 'Add new feature'`).
+4. Push to the branch (`git push origin feature-branch`).
+5. Create a pull request.
 
-Contributions are welcome! Please fork the repository and use a feature branch. Pull requests are warmly welcome.
+## License
 
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a pull request
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
-License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-Acknowledgements
-
-- The OpenCV team for their powerful computer vision library.
-- The Matplotlib community for their versatile plotting library.
 
