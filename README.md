@@ -81,6 +81,11 @@ MotionMetricsVision/
 ├── config.yaml           # Configuration file for parameters
 ├── requirements.txt      # Required dependencies
 ├── README.md             # Project documentation
+├── tests/                # Unit tests for the project
+│   ├── test_object_tracker.py   # Unit tests for object tracker logic
+│   ├── test_motion_analysis.py  # Unit tests for motion analysis functions
+│   ├── test_visualization.py    # Unit tests for visualization components
+│   └── test_config.py           # Unit tests for configuration handling
 └── logs/                 # Directory for log files
     └── tracking.log      # Log file for tracking data
 ```
